@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#3367D6"/>
+  <link rel="apple-touch-icon" href="/icons-192.png">
+  <link rel="manifest" href="/manifest.json">
+  
+
+
+  <meta name="generator" content="Hexo 6.3.0">
+
+  
+
+  
+
+  
+    <meta name="author" content="John Doe">
+  
+
+  
+
+  
+
+  <title>React 介绍 | GYB的博客</title>
+
+  
+
+  
+    <link rel="shortcut icon" href="https://img1.baidu.com/it/u=1088540074,3334562162&fm=253&fmt=auto&app=138&f=JPEG?w=237&h=221">
+  
+
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@1.1.3/index.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlightjs@9.16.2/styles/monokai.css">
+  
+
+  
+<link rel="stylesheet" href="/GYB_blog/css/style.css">
+
+</head>
+<body>
+  <div class="root-container">
+    
+<!-- header container -->
+<header class="header-container post">
+  
+    <div class="post-image" style="background-image: url(https://gimg2.baidu.com/image_search/src=http%3A%2F%2Finews.gtimg.com%2Fnewsapp_bt%2F0%2F14066095229%2F1000.jpg&amp;refer=http%3A%2F%2Finews.gtimg.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1668426706&amp;t=de7f2db5b41fb622a567e52c84fcc824)"></div>
+  
+
+  <!-- navbar -->
+<nav class="navbar">
+  <div class="navbar-content">
+    <!-- logo -->
+    <div class="navbar-logo">
+      <a href="/GYB_blog/">
+        
+          GYB的博客
+        
+      </a>
+    </div>
+    <!-- link -->
+    <div class="navbar-link">
+      <div class="navbar-btn">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <ul class="navbar-list">
+        
+          <li class="navbar-list-item"><a href="/GYB_blog/">首页</a></li>
+        
+          <li class="navbar-list-item"><a href="https://gaoyubo01.github.io/docs/">友链</a></li>
+        
+          <li class="navbar-list-item"><a href="/GYB_blog/about">关于</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+    <div class="header-content">
+      <div class="post-text layout-block">
+        <div class="layout-margin">
+          <h1 class="title-wrap">React 介绍</h1>
+          <h2 class="title-sub-wrap">
+            <strong>John Doe</strong>
+            <span>发布于</span>
+            <time  class="article-date" datetime="2022-10-15T12:46:30.000Z" itemprop="datePublished">2022-10-15</time>
+          </h2>
+          <span id="busuanzi_container_page_pv"><br>
+            本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+          </span>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/GYB_blog/categories/web%E5%89%8D%E7%AB%AF/">📒 web前端</a></li>
+  
+    <li><a href="/GYB_blog/categories/web%E5%89%8D%E7%AB%AF/react/">📒 react</a></li>
+  
+</ul>
+          <ul class="wrap-list dark">
+  
+    <li><a href="/GYB_blog/tags/web%E5%89%8D%E7%AB%AF/">🏷️ web前端</a></li>
+  
+    <li><a href="/GYB_blog/tags/react/">🏷️ react</a></li>
+  
+</ul>
+        </div>
+      </div>
+    </div>
+  
+
+  
+  
+  
+</header>
+
+    <!-- 文章 -->
+
+<!-- 文章内容 -->
+<div class="body-container">
+  <article class="content-container layout-block post-container">
+    <div class="article-info">
+      
+      
+      
+      
+      <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
+        <div class="aplayer-box" data-url='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.mp3' data-name='アイロニ' data-artist='鹿乃' data-cover='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.jpg' data-lrc='https://qiniu.sukoshi.xyz/public/music/鹿乃 - アイロニ.lrc' data-lrcType='3' ></div>
+<h2 id="一-React-介绍"><a href="#一-React-介绍" class="headerlink" title="一. React 介绍"></a>一. React 介绍</h2>
+    <figure class="figure-image">
+      <img src="https://gaoyubo01.github.io/docs/assets/img/1.e00bb30d.png" alt="带描述带图片" loading="lazy" />
+      <figcaption>带描述带图片</figcaption>
+    </figure>
+  
+
+<p>React 是一个用于构建用户界面的 JavaScript 库，它只负责应用的视图层，帮助开发人员构建快速且交互式的 web 应用程序。</p>
+<p>React 使用组件的方式构建用户界面。</p>
+<h2 id="2-JSX-语法"><a href="#2-JSX-语法" class="headerlink" title="2. JSX 语法"></a>2. JSX 语法</h2><p>在 React 中使用 JSX 语法描述用户界面，它是一种 JavaScript 语法扩展。</p>
+<p>在 React 代码执行之前，Babel 会将 JSX 语法转换为标准的 JavaScript API。</p>
+<p>JSX 语法就是一种语法糖，让开发人员使用更加舒服的代码构建用户界面。</p>
+<h3 id="2-1-在-JSX-中使用表达式"><a href="#2-1-在-JSX-中使用表达式" class="headerlink" title="2.1 在 JSX 中使用表达式"></a>2.1 在 JSX 中使用表达式</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const user = &#123;</span><br><span class="line">  firstName: &#x27;Harper&#x27;,</span><br><span class="line">  lastName: &#x27;Perez&#x27;</span><br><span class="line">&#125;</span><br><span class="line">function formatName(user) &#123;</span><br><span class="line">  return user.firstName + &#x27; &#x27; + user.lastName;</span><br><span class="line">&#125;</span><br><span class="line">const element = &lt;h1&gt;Hello, &#123;formatName(user)&#125;!&lt;/h1&gt;;</span><br></pre></td></tr></table></figure>
+
+<p>JSX 本身其实也是一种表达式，将它赋值给变量，当作参数传入，作为返回值都可以。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function getGreeting(user) &#123;</span><br><span class="line">  if (user) &#123;</span><br><span class="line">    return &lt;h1&gt;Hello, &#123;formatName(user)&#125;!&lt;/h1&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">  return &lt;h1&gt;Hello, Stranger.&lt;/h1&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-属性"><a href="#2-2-属性" class="headerlink" title="2.2 属性"></a>2.2 属性</h3><p>如果属性值为字符串类型，需要加引号，属性名称推荐采用驼峰式命名法。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const element = &lt;div greeting=&quot;hello&quot;&gt;&lt;/div&gt;;</span><br></pre></td></tr></table></figure>
+
+<p>如果属性值为JavaScript表达式，属性值外面加大括号。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const element = &lt;img src=&#123;user.avatarUrl&#125; /&gt;;</span><br><span class="line">// 注意大括号外面不能加引号，JSX 会将引号当中的内容识别为字符串而不是表达式</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3-JSX-单标记必须闭合"><a href="#2-3-JSX-单标记必须闭合" class="headerlink" title="2.3 JSX 单标记必须闭合"></a>2.3 JSX 单标记必须闭合</h3><p>如果 JSX 是单标记，必须闭合，否则报错。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">const element = &lt;img src=&#123;user.avatarUrl&#125; /&gt;</span><br><span class="line">const element = &lt;input type=&quot;text&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-4-className"><a href="#2-4-className" class="headerlink" title="2.4 className"></a>2.4 className</h3><p>为 JSX 标记添加类名需要使用 className，而不是class。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">const element = &lt;img src=&#123;user.avatarUrl&#125; className=&quot;rounded&quot;/&gt;;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-5-JSX-自动展开数组"><a href="#2-5-JSX-自动展开数组" class="headerlink" title="2.5  JSX 自动展开数组"></a>2.5  JSX 自动展开数组</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">const ary = [&lt;p&gt;哈哈&lt;/p&gt;, &lt;p&gt;呵呵&lt;/p&gt;, &lt;p&gt;嘿嘿&lt;/p&gt;];</span><br><span class="line">const element = (</span><br><span class="line">	&lt;div&gt;&#123;ary&#125;&lt;/div&gt;</span><br><span class="line">);</span><br><span class="line">// 解析后</span><br><span class="line">/*</span><br><span class="line">	&lt;div&gt;</span><br><span class="line">		&lt;p&gt;哈哈&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;呵呵&lt;/p&gt;</span><br><span class="line">		&lt;p&gt;嘿嘿&lt;/p&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-6-三元运算"><a href="#2-6-三元运算" class="headerlink" title="2.6 三元运算"></a>2.6 三元运算</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&#123; boolean ? &lt;div&gt;Hello React&lt;/div&gt; : null &#125;</span><br><span class="line">&#123; boolean &amp;&amp; &lt;div&gt;Hello React&lt;/div&gt; &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-7-循环"><a href="#2-7-循环" class="headerlink" title="2.7 循环"></a>2.7 循环</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const persons = [&#123;</span><br><span class="line">  id: 1,</span><br><span class="line">  name: &#x27;张三&#x27;,</span><br><span class="line">  age: 20</span><br><span class="line">&#125;, &#123;</span><br><span class="line">  id: 2,</span><br><span class="line">  name: &#x27;李四&#x27;,</span><br><span class="line">  age: 15</span><br><span class="line">&#125;, &#123;</span><br><span class="line">  id: 3,</span><br><span class="line">  name: &#x27;王五&#x27;,</span><br><span class="line">  age: 22</span><br><span class="line">&#125;]</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;ul&gt;</span><br><span class="line">  &#123; persons.map(person =&gt; &lt;li key=&#123;person.id&#125;&gt; &#123;person.name&#125; &#123;person.age&#125; &lt;/li&gt;) &#125;</span><br><span class="line">&lt;/ul&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-8-事件"><a href="#2-8-事件" class="headerlink" title="2.8 事件"></a>2.8 事件</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#123;/* 第一个参数即是事件对象 不需传递 */&#125;</span><br><span class="line">&lt;button onClick=&#123;this.eventHandler&#125;&gt;按钮&lt;/button&gt;</span><br><span class="line">&#123;/* 需要传递事件对象 */&#125;</span><br><span class="line">&lt;button onClick=&#123;e=&gt;this.eventHandler(&#x27;arg&#x27;,e)&#125;&gt;按钮&lt;/button&gt;</span><br><span class="line">&#123;/* 最后一个参数即是事件对象 不需传递 */&#125;</span><br><span class="line">&lt;button onClick=&#123;this.eventHandler.bind(null, &#x27;arg&#x27;)&#125;&gt;按钮&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">constructor () &#123;</span><br><span class="line">  this.eventHandler = this.eventHandler.bind(this)</span><br><span class="line">&#125;</span><br><span class="line">eventHandler () &#123;&#125;</span><br><span class="line">&lt;button onClick=&#123;this.eventHandler&#125;&gt;按钮&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-9-样式"><a href="#2-9-样式" class="headerlink" title="2.9 样式"></a>2.9 样式</h3><h4 id="2-9-1-行内样式"><a href="#2-9-1-行内样式" class="headerlink" title="2.9.1 行内样式"></a>2.9.1 行内样式</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class App extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    const style = &#123;width: 200, height: 200, backgroundColor: &#x27;red&#x27;&#125;;</span><br><span class="line">    return &lt;div style=&#123;style&#125;&gt;&lt;/div&gt;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-9-2-外链样式"><a href="#2-9-2-外链样式" class="headerlink" title="2.9.2 外链样式"></a>2.9.2 外链样式</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">// Button.js</span><br><span class="line">import styles from &#x27;./Button.module.css&#x27;;</span><br><span class="line">class Button extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return &lt;button className=&#123;styles.error&#125;&gt;Error Button&lt;/button&gt;;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-9-3-全局样式"><a href="#2-9-3-全局样式" class="headerlink" title="2.9.3 全局样式"></a>2.9.3 全局样式</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &#x27;./styles.css&#x27;</span><br></pre></td></tr></table></figure>
+
+<h3 id="2-10-ref-属性"><a href="#2-10-ref-属性" class="headerlink" title="2.10 ref 属性"></a>2.10 ref 属性</h3><h4 id="2-10-1-createRef"><a href="#2-10-1-createRef" class="headerlink" title="2.10.1 createRef"></a>2.10.1 createRef</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class Input extends Component &#123;</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    super()</span><br><span class="line">    this.inputRef = React.createRef()</span><br><span class="line">  &#125;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; ref=&#123;this.inputRef&#125; /&gt;</span><br><span class="line">        &lt;button onClick=&#123;() =&gt; console.log(this.inputRef.current)&#125;&gt; button &lt;/button&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-10-2-函数参数"><a href="#2-10-2-函数参数" class="headerlink" title="2.10.2 函数参数"></a>2.10.2 函数参数</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class Input extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; ref=&#123;input =&gt; (this.input = input)&#125; /&gt;</span><br><span class="line">        &lt;button onClick=&#123;() =&gt; console.log(this.input)&#125;&gt;button&lt;/button&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-10-3-ref-字符串"><a href="#2-10-3-ref-字符串" class="headerlink" title="2.10.3 ref 字符串"></a>2.10.3 ref 字符串</h4><p>不推荐使用，在严格模式下报错。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">class Input extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; ref=&quot;username&quot; /&gt;</span><br><span class="line">        &lt;button onClick=&#123;() =&gt; console.log(this.refs.username)&#125;&gt;button&lt;/button&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="2-10-4-获取组件实例"><a href="#2-10-4-获取组件实例" class="headerlink" title="2.10.4 获取组件实例"></a>2.10.4 获取组件实例</h4><p>点击按钮让 input 文本框获取焦点。</p>
+<p>input 文本框以及让文本框获取焦点的方法定义在 Input 组件中，在 App 组件中引入 Input 组件，按钮定义在 App 组件中。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// Input.js</span><br><span class="line">class Input extends Component &#123;</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    super()</span><br><span class="line">    this.inputRef = React.createRef()</span><br><span class="line">    this.focusInput = this.focusInput.bind(this)</span><br><span class="line">  &#125;</span><br><span class="line">  focusInput() &#123;</span><br><span class="line">    this.inputRef.current.focus()</span><br><span class="line">  &#125;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; ref=&#123;this.inputRef&#125; /&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">// App.js</span><br><span class="line">class App extends Component &#123;</span><br><span class="line">  constructor() &#123;</span><br><span class="line">    super()</span><br><span class="line">    this.InputComponentRef = React.createRef()</span><br><span class="line">  &#125;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div className=&quot;App&quot;&gt;</span><br><span class="line">        &lt;Input ref=&#123;this.InputComponentRef&#125; /&gt;</span><br><span class="line">        &lt;button onClick=&#123;() =&gt; this.InputComponentRef.current.focusInput()&#125;&gt;button&lt;/button&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+    <figure class="figure-image">
+      <img src="https://gaoyubo01.github.io/docs/assets/img/5.147f4235.gif" alt="带描述带图片" loading="lazy" />
+      <figcaption>带描述带图片</figcaption>
+    </figure>
+  
+<h2 id="3-组件"><a href="#3-组件" class="headerlink" title="3. 组件"></a>3. 组件</h2><h3 id="3-1-什么是组件"><a href="#3-1-什么是组件" class="headerlink" title="3.1 什么是组件"></a>3.1 什么是组件</h3><p>React 是基于组件的方式进行用户界面开发的. 组件可以理解为对页面中某一块区域的封装。</p>
+
+    <figure class="figure-image">
+      <img src="https://gaoyubo01.github.io/docs/assets/img/2.f34db7a4.png" alt="带描述带图片" loading="lazy" />
+      <figcaption>带描述带图片</figcaption>
+    </figure>
+  
+
+<h3 id="3-2-创建组件"><a href="#3-2-创建组件" class="headerlink" title="3.2 创建组件"></a>3.2 创建组件</h3><h4 id="3-2-1-创建类组件"><a href="#3-2-1-创建类组件" class="headerlink" title="3.2.1 创建类组件"></a>3.2.1 创建类组件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; Component &#125; from &#x27;react&#x27;;</span><br><span class="line">class App extends Component &#123;</span><br><span class="line">    render () &#123;</span><br><span class="line">        return &lt;div&gt;Hello, 我是类组件&lt;/div&gt;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-2-2-创建函数组件"><a href="#3-2-2-创建函数组件" class="headerlink" title="3.2.2 创建函数组件"></a>3.2.2 创建函数组件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const Person = () =&gt; &#123;</span><br><span class="line">     return &lt;div&gt;Hello, 我是函数型组件&lt;/div&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意事项</strong></p>
+<ol>
+<li>组件名称首字母必须大写，用以区分组件和普通标签。</li>
+<li>jsx语法外层必须有一个根元素</li>
+</ol>
+<h3 id="3-3-组件-props"><a href="#3-3-组件-props" class="headerlink" title="3.3 组件 props"></a>3.3 组件 props</h3><h4 id="3-3-1-props-传递数据"><a href="#3-3-1-props-传递数据" class="headerlink" title="3.3.1 props 传递数据"></a>3.3.1 props 传递数据</h4><p>在调用组件时可以向组件内部传递数据，在组件中可以通过 props 对象获取外部传递进来的数据。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;Person name=&quot;乔治&quot; age=&quot;20&quot;/&gt;</span><br><span class="line">&lt;Person name=&quot;玛丽&quot; age=&quot;10&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// 类组件</span><br><span class="line">class Person extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;h3&gt;姓名：&#123;this.props.name&#125;&lt;/h3&gt;</span><br><span class="line">        &lt;h4&gt;年龄：&#123;this.props.age&#125;&lt;/h4&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">// 函数组件</span><br><span class="line">const Person = props =&gt; &#123;</span><br><span class="line">  return (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;h3&gt;姓名：&#123;props.name&#125;&lt;/h3&gt;</span><br><span class="line">      &lt;h4&gt;年龄：&#123;props.age&#125;&lt;/h4&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong></p>
+<ol>
+<li>props 对象中存储的数据是只读的，不能在组件内部被修改。</li>
+<li>当 props 数据源中的数据被修改后，组件中的接收到的 props 数据会被同步更新。( 数据驱动DOM )</li>
+</ol>
+<h4 id="3-3-2-设置-props-默认值"><a href="#3-3-2-设置-props-默认值" class="headerlink" title="3.3.2 设置 props 默认值"></a>3.3.2 设置 props 默认值</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">class App extends Component &#123;</span><br><span class="line">    static defaultProps = &#123;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">function ThemedButton(props) &#123;</span><br><span class="line">&#125;</span><br><span class="line">ThemedButton.defaultProps = &#123;</span><br><span class="line">  theme: &quot;secondary&quot;,</span><br><span class="line">  label: &quot;Button Text&quot;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-3-3-组件-children"><a href="#3-3-3-组件-children" class="headerlink" title="3.3.3 组件 children"></a>3.3.3 组件 children</h4><p>通过 props.children 属性可以获取到在调用组件时填充到组件标签内部的内容。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;Person&gt;组件内部的内容&lt;/Person&gt;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">const Person = (props) =&gt; &#123;</span><br><span class="line">    return (</span><br><span class="line">    	&lt;div&gt;&#123;props.children&#125;&lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-3-4-单向数据流"><a href="#3-3-4-单向数据流" class="headerlink" title="3.3.4 单向数据流"></a>3.3.4 单向数据流</h4><ol>
+<li><p>在React中, 关于数据流动有一条原则, 就是单向数据流动, 自顶向下, 从父组件到子组件.</p>
+</li>
+<li><p>单向数据流特性要求我们共享数据要放置在上层组件中.</p>
+</li>
+<li><p>子组件通过调用父组件传递过来的方法更改数据.</p>
+</li>
+<li><p>当数据发生更改时, React会重新渲染组件树.</p>
+</li>
+<li><p>单向数据流使组件之间的数据流动变得可预测. 使得定位程序错误变得简单.</p>
+</li>
+</ol>
+
+    <figure class="figure-image">
+      <img src="https://gaoyubo01.github.io/docs/assets/img/3.68942ea6.png" alt="带描述带图片" loading="lazy" />
+      <figcaption>带描述带图片</figcaption>
+    </figure>
+  
+
+
+<h3 id="3-4-类组件状态-state"><a href="#3-4-类组件状态-state" class="headerlink" title="3.4 类组件状态 state"></a>3.4 类组件状态 state</h3><h4 id="3-4-1-定义组件状态"><a href="#3-4-1-定义组件状态" class="headerlink" title="3.4.1 定义组件状态"></a>3.4.1 定义组件状态</h4><p>类组件除了能够从外部 (props) 接收状态数据以外还可以拥有自己的状态 (state)，此状态在组件内部可以被更新，状态更新 DOM 更新。</p>
+<p>组件内部的状态数据被存储在组件类中的 state 属性中，state 属性值为对象类型，属性名称固定不可更改。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class App extends Component &#123;</span><br><span class="line">  constructor () &#123;</span><br><span class="line">    super()</span><br><span class="line">    this.state = &#123;</span><br><span class="line">      person: &#123; name: &#x27;张三&#x27;, age: 20 &#125;,</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  render () &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &#123;this.state.person.name&#125;</span><br><span class="line">        &#123;this.state.person.age&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-4-2-更改组件状态"><a href="#3-4-2-更改组件状态" class="headerlink" title="3.4.2 更改组件状态"></a>3.4.2 更改组件状态</h4><p>state 状态对象中的数据不可直接更改，如果直接更改 DOM 不会被更新，要更改 state 状态数据需要使用 setState方法。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">class App extends Component &#123;</span><br><span class="line">  constructor () &#123;</span><br><span class="line">    this.state = &#123;</span><br><span class="line">      person: &#123; name: &#x27;张三&#x27;, age: 20 &#125;,</span><br><span class="line">    &#125;</span><br><span class="line">    this.changePerson = this.changePerson.bind(this)</span><br><span class="line">  &#125;</span><br><span class="line">	changePerson () &#123;</span><br><span class="line">    this.setState(&#123;</span><br><span class="line">      person: &#123;</span><br><span class="line">        name: &#x27;李四&#x27;,</span><br><span class="line">        age: 15</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &#123;this.state.person.name&#125;</span><br><span class="line">        &#123;this.state.person.age&#125;</span><br><span class="line">        &lt;button onClick=&#123;this.changePerson&#125;&gt;按钮&lt;/button&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-4-3-双向数据绑定"><a href="#3-4-3-双向数据绑定" class="headerlink" title="3.4.3 双向数据绑定"></a>3.4.3 双向数据绑定</h4><p>双向数据绑定是指，组件类中更新了状态，DOM 状态同步更新，DOM 更改了状态，组件类中同步更新。组件 &lt;&#x3D;&gt; 视图。</p>
+<p>要实现双向数据绑定需要用到表单元素和 state 状态对象。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">class App extends Component &#123;</span><br><span class="line">  constructor () &#123;</span><br><span class="line">    this.state = &#123;</span><br><span class="line">      name: &quot;张三&quot;</span><br><span class="line">    &#125;</span><br><span class="line">    this.nameChanged = this.nameChanged.bind(this)</span><br><span class="line">  &#125;</span><br><span class="line">  nameChanged (event) &#123;</span><br><span class="line">    this.setState(&#123;name: event.target.value&#125;);</span><br><span class="line">  &#125;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;div&gt;&#123;this.state.name&#125;&lt;/div&gt;</span><br><span class="line">        &lt;Person name=&#123;this.state.name&#125; changed=&#123;this.nameChanged&#125;/&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">const Person = props =&gt; &#123;</span><br><span class="line">	return &lt;input type=&quot;text&quot; value=&#123;props.name&#125; onChange=&#123;props.changed&#125;/&gt;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-5-类组件生命周期函数"><a href="#3-5-类组件生命周期函数" class="headerlink" title="3.5 类组件生命周期函数"></a>3.5 类组件生命周期函数</h3>
+    <figure class="figure-image">
+      <img src="https://gaoyubo01.github.io/docs/assets/img/4.704584ae.jpg" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+
+
+<p>在组件完成更新之前需要做某种逻辑或者计算，就需要用到快照</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">componentDidUpdate(prevProps, prevState, snapshot) &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p>getSnapshotBeforeUpdate 方法会在组件完成更新之前执行，用于执行某种逻辑或计算，返回值可以在 componentDidUpdate 方法中的第三个参数中获取，就是说在组件更新之后可以拿到这个值再去做其他事情。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">getSnapshotBeforeUpdate(prevProps, prevState) &#123;</span><br><span class="line">  return &#x27;snapshot&#x27;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="3-6-Context"><a href="#3-6-Context" class="headerlink" title="3.6 Context"></a>3.6 Context</h3><p>通过 Context 可以跨层级传递数据</p>
+
+    <figure class="figure-image">
+      <img src="https://gaoyubo01.github.io/docs/assets/img/6.d58f9a83.png" alt="" loading="lazy" />
+      <figcaption></figcaption>
+    </figure>
+  
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// userContext.js</span><br><span class="line">import React from &quot;react&quot;</span><br><span class="line"></span><br><span class="line">const userContext = React.createContext(&quot;default value&quot;)</span><br><span class="line">const UserProvider = userContext.Provider</span><br><span class="line">const UserConsumer = userContext.Consumer</span><br><span class="line"></span><br><span class="line">export &#123; UserProvider, UserConsumer &#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// App.js</span><br><span class="line">import &#123; UserProvider &#125; from &quot;./userContext&quot;</span><br><span class="line">class App extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;UserProvider value=&quot;Hello React Context&quot;&gt;</span><br><span class="line">        &lt;A /&gt;</span><br><span class="line">      &lt;/UserProvider&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">// C.js</span><br><span class="line">import &#123; UserConsumer &#125; from &quot;./userContext&quot;</span><br><span class="line"></span><br><span class="line">export class C extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;UserConsumer&gt;</span><br><span class="line">          &#123;username =&gt; &#123;</span><br><span class="line">            return &lt;div&gt;&#123;username&#125;&lt;/div&gt;</span><br><span class="line">          &#125;&#125;</span><br><span class="line">        &lt;/UserConsumer&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>context 的另一种用法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">// userContext.js</span><br><span class="line">export default userContext</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">// C.js</span><br><span class="line">import userContext from &quot;./userContext&quot;</span><br><span class="line"></span><br><span class="line">export class C extends Component &#123;</span><br><span class="line">  static contextType = userContext</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &#123;this.context&#125;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="4-表单"><a href="#4-表单" class="headerlink" title="4. 表单"></a>4. 表单</h2><h3 id="4-1-受控表单"><a href="#4-1-受控表单" class="headerlink" title="4.1 受控表单"></a>4.1 受控表单</h3><p>表单控件中的值由组件的 state 对象来管理，state对象中存储的值和表单控件中的值时同步状态的</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class App extends Component &#123;</span><br><span class="line">  constructor () &#123;</span><br><span class="line">    this.state = &#123; username: &quot;&quot; &#125;</span><br><span class="line">    this.nameChanged = this.nameChanged.bind(this)</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  nameChanged (e) &#123;</span><br><span class="line">    this.setState(&#123;username: e.target.value&#125;)</span><br><span class="line">  &#125;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;form&gt;</span><br><span class="line">        &lt;p&gt;&#123;this.state.username&#125;&lt;/p&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; value=&#123;this.state.username&#125; onChange=&#123;this.nameChanged&#125;/&gt;</span><br><span class="line">      &lt;/form&gt;</span><br><span class="line">    )</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="4-2-非受控表单"><a href="#4-2-非受控表单" class="headerlink" title="4.2 非受控表单"></a>4.2 非受控表单</h3><p>表单元素的值由 DOM 元素本身管理。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class App extends Component &#123;</span><br><span class="line">  constructor () &#123;</span><br><span class="line">    this.onSubmit = this.onSubmit.bind(this)</span><br><span class="line">  &#125;</span><br><span class="line">  onSubmit(e) &#123;</span><br><span class="line">    console.log(this.username.value)</span><br><span class="line">    e.preventDefault();</span><br><span class="line">  &#125;</span><br><span class="line">  render(</span><br><span class="line">    &lt;form onSubmit=&#123;this.onSubmit&#125;&gt;</span><br><span class="line">      &lt;input type=&quot;text&quot; ref=&#123;username =&gt; this.username = username&#125;/&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">  )</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="5-路由"><a href="#5-路由" class="headerlink" title="5. 路由"></a>5. 路由</h2><p>url地址与组件之间的对应关系，访问不同的url地址显示不同的组件。</p>
+<p>下载：<code>npm install react-router-dom</code></p>
+<h3 id="5-1-1-路由基本使用"><a href="#5-1-1-路由基本使用" class="headerlink" title="5.1.1 路由基本使用"></a>5.1.1 路由基本使用</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">// App.js</span><br><span class="line">import React from &#x27;react&#x27;;</span><br><span class="line">import &#123; BrowserRouter as Router, Route, Link &#125; from &#x27;react-router-dom&#x27;;</span><br><span class="line">function Index() &#123;</span><br><span class="line">	return &lt;div&gt;首页&lt;/div&gt;;</span><br><span class="line">&#125;</span><br><span class="line">function News() &#123;</span><br><span class="line">	return &lt;div&gt;新闻&lt;/div&gt;;</span><br><span class="line">&#125;</span><br><span class="line">function App() &#123;</span><br><span class="line">  return (</span><br><span class="line">    &lt;Router&gt;</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;Link to=&quot;/index&quot;&gt;首页&lt;/Link&gt;</span><br><span class="line">        &lt;Link to=&quot;/news&quot;&gt;新闻&lt;/Link&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;Route path=&quot;/index&quot; component=&#123;Index&#125;/&gt;</span><br><span class="line">        &lt;Route path=&quot;/news&quot; component=&#123;News&#125;/&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/Router&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-1-2-路由嵌套"><a href="#5-1-2-路由嵌套" class="headerlink" title="5.1.2 路由嵌套"></a>5.1.2 路由嵌套</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">function News(props) &#123;</span><br><span class="line">  return (</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;Link to=&#123;`$&#123;props.match.url&#125;/company`&#125;&gt;公司新闻&lt;/Link&gt;</span><br><span class="line">        &lt;Link to=&#123;`$&#123;props.match.url&#125;/industry`&#125;&gt;行业新闻&lt;/Link&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;Route path=&#123;`$&#123;props.match.path&#125;/company`&#125; component=&#123;CompanyNews&#125; /&gt;</span><br><span class="line">        &lt;Route path=&#123;`$&#123;props.match.path&#125;/industry`&#125; component=&#123;IndustryNews&#125;/&gt;  </span><br><span class="line">      &lt;/div&gt;	</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  );</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function CompanyNews() &#123;</span><br><span class="line">	return &lt;div&gt;公司新闻&lt;/div&gt;</span><br><span class="line">&#125;</span><br><span class="line">function IndustryNews() &#123;</span><br><span class="line">	return &lt;div&gt;行业新闻&lt;/div&gt;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-1-3-路由传参"><a href="#5-1-3-路由传参" class="headerlink" title="5.1.3 路由传参"></a>5.1.3 路由传参</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">import url from &#x27;url&#x27;;</span><br><span class="line">class News extends Component &#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">    this.state = &#123;</span><br><span class="line">      list: [&#123;</span><br><span class="line">        id: 1,</span><br><span class="line">        title: &#x27;新闻1&#x27;</span><br><span class="line">      &#125;, &#123;</span><br><span class="line">        id: 2,</span><br><span class="line">        title: &#x27;新闻2&#x27;</span><br><span class="line">      &#125;]</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">    </span><br><span class="line">  render() &#123;</span><br><span class="line">    return (</span><br><span class="line">      &lt;div&gt;</span><br><span class="line">        &lt;div&gt;新闻列表组件&lt;/div&gt;</span><br><span class="line">        &lt;ul&gt;</span><br><span class="line">          this.state.list.map((item, index) =&gt; &#123;</span><br><span class="line">            return (</span><br><span class="line">              &lt;li key=&#123;index&#125;&gt;</span><br><span class="line">                &lt;Link to=&#123;`/detail?id=$&#123;item.id&#125;`&#125;&gt;&#123;item.title&#125;&lt;/Link&gt;</span><br><span class="line">              &lt;/li&gt;</span><br><span class="line">            );</span><br><span class="line">          &#125;)</span><br><span class="line">        &lt;/ul&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    );</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">class Detail extends Component &#123;</span><br><span class="line">  constructor(props) &#123;</span><br><span class="line">    super(props);</span><br><span class="line">  &#125;</span><br><span class="line">	const &#123; query &#125; = url.parse(this.props.location.search, true);</span><br><span class="line">	console.log(query); // &#123;id: 1&#125;</span><br><span class="line">  render() &#123;</span><br><span class="line">    return &lt;div&gt;新闻详情&lt;/div&gt;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="5-1-4-路由重定向"><a href="#5-1-4-路由重定向" class="headerlink" title="5.1.4 路由重定向"></a>5.1.4 路由重定向</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import &#123; Redirect &#125; from &#x27;react-router-dom&#x27;;</span><br><span class="line"></span><br><span class="line">class Login extends Component &#123;</span><br><span class="line">  render() &#123;</span><br><span class="line">    if (this.state.isLogin) &#123;</span><br><span class="line">      return &lt;Redirect to=&quot;/&quot;/&gt;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      </section>
+
+      
+      
+        <nav class="article-nav">
+          
+          
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fmacjpeg.macsc.com%2Fmacdown%2Fpic%2F201908%2F14163712_a9d35129eb.jpeg&amp;refer=http%3A%2F%2Fmacjpeg.macsc.com&amp;app=2002&amp;size=f9999,10000&amp;q=a80&amp;n=0&amp;g=0n&amp;fmt=auto?sec=1668429594&amp;t=48f96232d1199712fca8225ae4202baf"></div>
+    
+    <div class="card-text">
+      
+        <a href="/GYB_blog/2022/10/15/IReact/VirtualDOM%E5%8F%8ADiff%E7%AE%97%E6%B3%95/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">Virtual DOM 及 Diff 算法</h2>
+        </a>
+      
+      <div class="card-text--row">Older</div>
+    </div>
+  </article>
+</div>
+          
+        </nav>
+      
+
+      <section class="page-message-container layout-padding">
+        
+
+
+  
+  
+    <div class="valine-container comments-container content-padding--primary soft-size--large soft-style--box">
+      <div id="valine_thread" class="valine-thread"></div>
+    </div>
+    <script type="text/javascript" src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script type="text/javascript" src='//unpkg.com/valine/dist/Valine.min.js'></script>
+    <script type="text/javascript">
+      new Valine({
+        el: "#valine_thread",
+        appId: "pUxEGAT8SFEeyFUC8S5kPk8n-gzGzoHsz",
+        appKey: "rytAHCJEjCUx7Yd4oTUhyPQL",
+        avatar: "mm",
+        placeholder: "随便说点什么叭～",
+        notify: true,
+        visitor: true,
+        pageSize: 10,
+      });
+    </script>
+  
+
+  
+  
+
+
+      </section>
+    </div>
+    <div class="widget-info">
+      <section class="widget-author widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-body">
+    
+      <img src="https://img1.baidu.com/it/u=1088540074,3334562162&amp;fm=253&amp;fmt=auto&amp;app=138&amp;f=JPEG?w=237&amp;h=221" class="soft-size--round soft-style--box" alt="GYB">
+    
+    
+      <h2>GYB</h2>
+    
+    
+      <p>日拱一卒，功不唐捐</p>
+    
+
+    <div class="count-box">
+      <div class="count-box--item">
+        <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
+</svg>
+        <span>5</span>
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+      <div class="count-box--item">
+        <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+        2
+      </div>
+    </div>
+  </div>
+</section>
+
+      
+<section class="widget-toc widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-toc" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M134.50666666 767.46666668H460.8c27.73333333 0 50.24000001 22.50666668 50.24000001 50.23999999v50.13333333c0 27.73333333-22.50666668 50.24000001-50.24000001 50.24000001H134.50666666c-27.73333333 0-50.24000001-22.50666668-50.23999999-50.24000001v-50.13333333c0.10666668-27.73333333 22.50666668-50.24000001 50.24000001-50.24000001zM84.37333332 541.65333333h326.18666669c27.73333333 0 50.24000001 22.39999999 50.23999999 50.13333334v50.24000001c0 27.73333333-22.50666668 50.24000001-50.24000002 50.23999999H84.37333332c-27.73333333 0-50.24000001-22.50666668-50.23999999-50.23999999v-50.24000001c0-27.73333333 22.50666668-50.13333334 50.24000001-50.13333334zM134.50666666 315.83999999H460.8c27.73333333 0 50.24000001 22.50666668 50.24000001 50.24000001v50.24000001c0 27.73333333-22.50666668 50.13333334-50.24000001 50.13333333H134.50666666c-27.73333333 0-50.24000001-22.39999999-50.23999999-50.13333333v-50.24000001c0.10666668-27.84000001 22.50666668-50.24000001 50.24000001-50.23999999zM209.81333332 89.91999999h326.18666671c27.73333333 0 50.24000001 22.39999999 50.23999997 50.13333335v50.23999999c0 27.73333333-22.50666668 50.24000001-50.24000001 50.24000001H209.81333332c-27.73333333 0-50.24000001-22.50666668-50.23999999-50.24000001v-50.24000001c0-27.73333333 22.50666668-50.13333334 50.24000001-50.13333333zM692.05333333 623.36l274.66666669 176.00000002c23.36000001 14.93333333 30.08 45.97333334 15.14666666 69.33333332L954.77333334 910.93333333c-14.93333333 23.25333334-45.97333334 30.08-69.33333335 15.14666667l-274.66666666-176c-23.36000001-14.93333333-30.08-45.97333334-15.14666667-69.33333333l27.09333334-42.24000001c14.93333333-23.36000001 46.08000001-30.08 69.33333333-15.14666666z" fill="currentColor"></path>
+</svg>
+    <span>TOC</span>
+  </div>
+  <div class="widget-body">
+    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80-React-%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">一. React 介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-JSX-%E8%AF%AD%E6%B3%95"><span class="toc-number">2.</span> <span class="toc-text">2. JSX 语法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1-%E5%9C%A8-JSX-%E4%B8%AD%E4%BD%BF%E7%94%A8%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="toc-number">2.1.</span> <span class="toc-text">2.1 在 JSX 中使用表达式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-%E5%B1%9E%E6%80%A7"><span class="toc-number">2.2.</span> <span class="toc-text">2.2 属性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3-JSX-%E5%8D%95%E6%A0%87%E8%AE%B0%E5%BF%85%E9%A1%BB%E9%97%AD%E5%90%88"><span class="toc-number">2.3.</span> <span class="toc-text">2.3 JSX 单标记必须闭合</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4-className"><span class="toc-number">2.4.</span> <span class="toc-text">2.4 className</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5-JSX-%E8%87%AA%E5%8A%A8%E5%B1%95%E5%BC%80%E6%95%B0%E7%BB%84"><span class="toc-number">2.5.</span> <span class="toc-text">2.5  JSX 自动展开数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6-%E4%B8%89%E5%85%83%E8%BF%90%E7%AE%97"><span class="toc-number">2.6.</span> <span class="toc-text">2.6 三元运算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7-%E5%BE%AA%E7%8E%AF"><span class="toc-number">2.7.</span> <span class="toc-text">2.7 循环</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8-%E4%BA%8B%E4%BB%B6"><span class="toc-number">2.8.</span> <span class="toc-text">2.8 事件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9-%E6%A0%B7%E5%BC%8F"><span class="toc-number">2.9.</span> <span class="toc-text">2.9 样式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10-ref-%E5%B1%9E%E6%80%A7"><span class="toc-number">2.10.</span> <span class="toc-text">2.10 ref 属性</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3-%E7%BB%84%E4%BB%B6"><span class="toc-number">3.</span> <span class="toc-text">3. 组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1-%E4%BB%80%E4%B9%88%E6%98%AF%E7%BB%84%E4%BB%B6"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 什么是组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2-%E5%88%9B%E5%BB%BA%E7%BB%84%E4%BB%B6"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 创建组件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3-%E7%BB%84%E4%BB%B6-props"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 组件 props</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4-%E7%B1%BB%E7%BB%84%E4%BB%B6%E7%8A%B6%E6%80%81-state"><span class="toc-number">3.4.</span> <span class="toc-text">3.4 类组件状态 state</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5-%E7%B1%BB%E7%BB%84%E4%BB%B6%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0"><span class="toc-number">3.5.</span> <span class="toc-text">3.5 类组件生命周期函数</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6-Context"><span class="toc-number">3.6.</span> <span class="toc-text">3.6 Context</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4-%E8%A1%A8%E5%8D%95"><span class="toc-number">4.</span> <span class="toc-text">4. 表单</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E5%8F%97%E6%8E%A7%E8%A1%A8%E5%8D%95"><span class="toc-number">4.1.</span> <span class="toc-text">4.1 受控表单</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E9%9D%9E%E5%8F%97%E6%8E%A7%E8%A1%A8%E5%8D%95"><span class="toc-number">4.2.</span> <span class="toc-text">4.2 非受控表单</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5-%E8%B7%AF%E7%94%B1"><span class="toc-number">5.</span> <span class="toc-text">5. 路由</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-1-%E8%B7%AF%E7%94%B1%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="toc-number">5.1.</span> <span class="toc-text">5.1.1 路由基本使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-2-%E8%B7%AF%E7%94%B1%E5%B5%8C%E5%A5%97"><span class="toc-number">5.2.</span> <span class="toc-text">5.1.2 路由嵌套</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-3-%E8%B7%AF%E7%94%B1%E4%BC%A0%E5%8F%82"><span class="toc-number">5.3.</span> <span class="toc-text">5.1.3 路由传参</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-1-4-%E8%B7%AF%E7%94%B1%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-number">5.4.</span> <span class="toc-text">5.1.4 路由重定向</span></a></li></ol></li></ol>
+  </div>
+</section>
+
+
+      
+<section class="widet-notice widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-notice" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M512 945.02305225v28.15620663a24.27259221 24.27259221 0 0 1-24.27259221 24.27259335H394.0352a48.54518557 48.54518557 0 0 1-41.74885888-23.78714112l-110.68302222-184.47170332a132.04290333 132.04290333 0 0 1-17.47626667-48.54518557h118.4502511a200.97706667 200.97706667 0 0 1 76.21594113 14.56355556l20.38897777 133.49925888a48.54518557 48.54518557 0 0 0 36.40888888 27.67075555l16.01991111 2.91271112a24.27259221 24.27259221 0 0 1 20.38897778 25.72894889zM997.45185223 463.45481443a194.18074112 194.18074112 0 0 1-38.8361489 116.50844445 24.75804445 24.75804445 0 0 1-36.4088889 0l-34.95253333-34.95253333a24.27259221 24.27259221 0 0 1-2.91271111-30.58346667 97.09036999 97.09036999 0 0 0 0-106.79940665 24.27259221 24.27259221 0 0 1 2.91271111-30.58346666l34.95253333-34.95253334a24.75804445 24.75804445 0 0 1 18.93262223-7.28177777 26.2144 26.2144 0 0 1 17.47626667 9.70903665A194.18074112 194.18074112 0 0 1 997.45185223 463.45481443z m-194.18074112-388.36148111v776.72296335a48.54518557 48.54518557 0 0 1-48.54518556 48.54518443h-28.64165888a48.54518557 48.54518557 0 0 1-33.98163001-14.07810332l-145.63555556-143.20829668A291.27111111 291.27111111 0 0 0 342.57730333 657.63555556H172.18370333a145.63555556 145.63555556 0 0 1-145.63555556-145.63555556v-97.09036999a145.63555556 145.63555556 0 0 1 145.63555556-145.63555556h170.3936a291.27111111 291.27111111 0 0 0 206.31703779-85.43952668l145.63555555-143.20829554a48.54518557 48.54518557 0 0 1 33.98162888-14.07810446H754.72592555a48.54518557 48.54518557 0 0 1 48.54518556 48.54518555z" fill="currentColor"></path>
+</svg>
+    <span>NOTICE</span>
+  </div>
+  <div class="widget-body">
+    <p>持续更新中。。。</p>
+  </div>
+</section>
+
+
+      <section class="widget-categorys widget-item layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M900.3614811 257.09082106h-339.81629553l-67.96326003-101.9448889c-19.41807444-29.12711113-48.54518557-43.69066667-82.52681443-43.69066667H123.6385189c-53.39970333 0-97.09036999 43.69066667-97.09037113 97.09036999v582.54222222c0 53.39970333 43.69066667 97.09036999 97.09037113 97.09037002h776.7229622c53.39970333 0 97.09036999-43.69066667 97.09037113-97.09037002V354.18119104c0-53.39970333-43.69066667-97.09036999-97.09037113-97.09036998z m-97.09036999 242.72592554H220.72888889c-24.27259221 0-48.54518557-24.27259221-48.54518556-48.54518556s24.27259221-48.54518557 48.54518556-48.54518444h582.54222222c24.27259221 0 48.54518557 24.27259221 48.54518556 48.54518444s-24.27259221 48.54518557-48.54518556 48.54518556z" fill="currentColor"></path>
+</svg>
+    <span>CATEGORYS</span>
+  </div>
+  <div class="widget-body">
+    <ul class="categorys-list">
+      
+        <li class="categorys-list-item">
+          <a href="/GYB_blog/categories/web%E5%89%8D%E7%AB%AF/">
+            web前端 (5)
+          </a>
+        </li>
+      
+        <li class="categorys-list-item">
+          <a href="/GYB_blog/categories/web%E5%89%8D%E7%AB%AF/react/">
+            react (5)
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</section>
+
+      <section class="widget-tags widget-item  layout-margin content-padding--primary soft-size--large soft-style--box">
+  <div class="widget-title">
+    <svg class="icon icon-tags" viewBox="0 0 1098 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M283.42180005 272q0-28.38857157-20.09142843-48.48000001t-48.47999998-20.09142842-48.48000002 20.09142842-20.09142846 48.48000001 20.09142846 48.48 48.48000002 20.09142843 48.47999998-20.09142843 20.09142843-48.48zM855.0332285 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.03999997 263.58857157q-20.9142853 19.81714313-48.75428534 19.81714312-28.38857157 0-48.20571468-19.81714312l-383.04-383.58857157q-20.36571468-19.81714313-34.55999999-54.10285688t-14.19428534-62.6742853l0-222.85714313q0-27.84000002 20.36571469-48.20571469t48.2057147-20.36571466l222.85714313 0q28.38857157 0 62.6742853 14.19428529t54.65142842 34.55999999l383.04000001 382.49142843q19.81714313 20.9142853 19.81714314 48.75428532zM1060.74751475 580.57142843q0 28.38857157-19.81714313 48.2057147l-263.04 263.58857157q-20.9142853 19.81714313-48.75428531 19.81714312-19.26857155 0-31.61142843-7.47428531t-28.38857159-24.13714314l251.79428534-251.7942853q19.81714313-19.81714313 19.81714308-48.20571469 0-27.84000002-19.81714308-48.75428531l-383.04000001-382.49142845q-20.36571468-20.36571468-54.65142842-34.55999999t-62.67428532-14.19428534l120 0q28.38857157 0 62.67428532 14.19428534t54.65142842 34.55999999l383.03999998 382.49142845q19.81714313 20.9142853 19.81714314 48.75428531z" fill="currentColor"></path>
+</svg>
+    <span>TAGS</span>
+  </div>
+  <div class="widget-body">
+    <div class="tags-cloud">
+      <a href="/GYB_blog/tags/react/" style="font-size: 10px;" class="tags-cloud-0">react</a> <a href="/GYB_blog/tags/web%E5%89%8D%E7%AB%AF/" style="font-size: 10px;" class="tags-cloud-0">web前端</a>
+    </div>
+  </div>
+</section>
+    </div>
+  </article>
+</div>
+
+    <!-- footer container -->
+<footer id="footer" class="footer">
+  <div class="footer-container">
+    
+    <div class="social-icons">
+      
+        
+      
+        
+      
+        
+      
+        
+          <a href="https://github.com/gaoyubo01" class="soft-size--primary soft-style--box" target="_blank" rel="noopener noreferrer">
+            <svg class="icon icon-github" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <path d="M64.6 512c0 195.6 125.4 361.9 300.1 422.9 23.5 5.9 19.9-10.8 19.9-22.2v-77.6c-135.8 15.9-141.3-74-150.5-89-18.5-31.5-61.9-39.5-49-54.5 31-15.9 62.5 4 98.9 58 26.4 39.1 77.9 32.5 104.1 26 5.7-23.5 17.9-44.5 34.7-60.9-140.7-25.2-199.4-111.1-199.4-213.3 0-49.5 16.4-95.1 48.4-131.8-20.4-60.6 1.9-112.4 4.9-120.1 58.2-5.2 118.5 41.6 123.3 45.3 33.1-8.9 70.8-13.7 112.9-13.7 42.4 0 80.3 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.4-43.9 2.9 7.7 24.7 58.3 5.5 118.1 32.5 36.8 49 82.8 49 132.4 0 102.3-59 188.3-200.2 213.2 23.5 23.3 38.1 55.5 38.1 91.1v112.7c0.8 9 0 17.9 15.1 17.9C832.7 877 960.4 709.4 960.4 512.1c0-247.5-200.6-447.9-447.9-447.9C265 64.1 64.6 264.5 64.6 512z"></path>
+</svg>
+          </a>
+        
+      
+        
+      
+    </div>
+     
+    <p>&copy; 2022 <a href="/" target="_blank">John Doe</a></p>
+
+    
+
+    <!-- <p>Powered by <a href="https://hexo.io" target="_blank" rel="noopener noreferrer">Hexo</a> Theme - <a href="https://github.com/miiiku/flex-block" target="_blank" rel="noopener noreferrer author">flex-block</a></p> -->
+
+    <p>
+      <a href="javascript:;" id="theme-light">🌞 浅色</a>
+      <a href="javascript:;" id="theme-dark">🌛 深色</a>
+      <a href="javascript:;" id="theme-auto">🤖️ 自动</a>
+    </p>
+    <span id="busuanzi_container_site_uv"><br>
+      本站访客数<span id="busuanzi_value_site_uv"></span>人次
+    </span>
+  </div>
+</footer>
+  </div>
+
+  <div class="back-to-top-fixed soft-size--round soft-style--box">
+    <svg class="icon icon-back-to-top" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
+      <path d="M725.333333 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8l-213.333333-213.333333c-17.066667-17.066667-17.066667-42.666667 0-59.733333s42.666667-17.066667 59.733333 0l213.333333 213.333333c17.066667 17.066667 17.066667 42.666667 0 59.733333C746.666667 422.4 738.133333 426.666667 725.333333 426.666667z"></path>
+      <path d="M298.666667 426.666667c-12.8 0-21.333333-4.266667-29.866667-12.8-17.066667-17.066667-17.066667-42.666667 0-59.733333l213.333333-213.333333c17.066667-17.066667 42.666667-17.066667 59.733333 0s17.066667 42.666667 0 59.733333l-213.333333 213.333333C320 422.4 311.466667 426.666667 298.666667 426.666667z"></path>
+      <path d="M512 896c-25.6 0-42.666667-17.066667-42.666667-42.666667L469.333333 170.666667c0-25.6 17.066667-42.666667 42.666667-42.666667s42.666667 17.066667 42.666667 42.666667l0 682.666667C554.666667 878.933333 537.6 896 512 896z"></path>
+    </svg>
+  </div>
+
+  
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<!-- aplayer -->
+
+
+  <!-- aplayer 音频 start -->
+  <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+  <script type="text/javascript" src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <script type="text/javascript">
+    const aplayer = document.querySelectorAll(".aplayer-box");
+    aplayer && initaplayer(aplayer);
+    function initaplayer(els) {
+      let elsArr = Array.from(els);
+      elsArr.forEach(el => {
+        let params = {
+          container: el,
+          audio: { ...el.dataset },
+          theme: "#b7daff",
+          autoplay: false,
+          loop: false,
+          mutex: true,
+        }
+        if (el.dataset.lrc) {
+          params['lrcType'] = 3
+        }
+        new APlayer(params);
+      });
+    }
+  </script>
+  <!-- aplayer 音频 end -->
+  
+
+
+<!-- dplayer -->
+
+
+
+
+  
+
+
+  
+
+
+  
+
+
+
+
+<script src="/GYB_blog/js/script.js"></script>
+
+
+  
+  <!-- 尾部用户自定义相关内容 -->
+</body>
+</html>
